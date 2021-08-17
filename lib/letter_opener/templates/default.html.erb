@@ -99,6 +99,9 @@
             <dt>BCC:</dt>
             <dd><%= h bcc %></dd>
           <% end %>
+          
+          <dt>Headers:</dt>
+          <dd><%= mail.header.fields %></dd>          
 
           <% if @attachments.any? %>
             <dt>Attachments:</dt>
